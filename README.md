@@ -1,1 +1,1 @@
-This is a temperature converter which converts celcius to fahrenheit and vice versa.
+This is a temperature converter which converts Celcius to Fahrenheit, Celcius to Kelvin, Fahrenheit to Kelvin and vice versa.
