@@ -14,11 +14,12 @@ int main()
         cout << "4. Cancel a seat booking " << endl;
         cout << "5. Display available seat only" << endl;
         cout << "6. Exit " << endl;
-        cout << "Enter your choice(1 to 6) to select a function: ";
+        cout << "Enter your choice (1 to 6): ";
         cin >> n;
 
         if (n == 1)
         {
+            cout << "--- Seat Layout (0 = Available, 1 = Booked) ---" << endl;
             for (int i = 0; i < 5; i++)
             {
                 for (int j = 0; j < 7; j++)
@@ -36,6 +37,7 @@ int main()
             if (arr[a - 1][b - 1] == 0)
             {
                 arr[a - 1][b - 1] = 1;
+                cout << "Seat successfully booked!" << endl;
             }
             else
             {
@@ -56,9 +58,10 @@ int main()
                 }
                 else
                 {
-                    cout << "Seats already booked!" << endl;
+                    cout << "Seat " << "[" << c << "," << j + 1 << "]" << " already booked!" << endl;
                 }
             }
+            cout << "Seats successfully booked!" << endl;
         }
         else if (n == 4)
         {
@@ -69,6 +72,7 @@ int main()
             if (arr[f - 1][g - 1] == 1)
             {
                 arr[f - 1][g - 1] = 0;
+                cout << "Booked seat cancelled successfully!" << endl;
             }
             else
             {
@@ -77,14 +81,14 @@ int main()
         }
         else if (n == 5)
         {
-
+            cout << "--- Available Seat Layout (0 = Available) ---" << endl;
             for (int i = 0; i < 5; i++)
             {
                 for (int j = 0; j < 7; j++)
                 {
                     if (arr[i][j] == 1)
                     {
-                        cout << "- ";
+                        cout << "  ";
                     }
                     else
                     {
@@ -96,6 +100,7 @@ int main()
         }
         else if (n == 6)
         {
+            cout << "Exiting System. Thank you!" << endl;
             return 0;
         }
         else

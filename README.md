@@ -1,1 +1,1 @@
-This is a temperature converter which converts Celcius to Fahrenheit, Celcius to Kelvin, Fahrenheit to Kelvin and vice versa.
+In this Repsitory, we upload small projects coded in c++ language.
